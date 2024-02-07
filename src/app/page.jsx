@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
 } from '@/components/SocialIcons'
 import logoSapphir from '@/images/logos/Sapphir.svg'
-import logoNanofab from '@/images/logos/Nanofab.svg'
+import logoNanoFab from '@/images/logos/NanoFab.svg'
 import logoGopuff from '@/images/logos/Gopuff.svg'
 import logoComcast from '@/images/logos/Comcast.svg'
 import image1 from '@/images/photos/image-1.jpg'
@@ -209,7 +209,7 @@ function Resume() {
     {
       company: 'Kingston Nanofabrication',
       title: 'Full Stack Web Developer',
-      logo: logoNanofab,
+      logo: logoNanoFab,
       start: '2019',
       end: '2020',
     },

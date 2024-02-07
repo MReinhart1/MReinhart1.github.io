@@ -9,7 +9,7 @@ import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 // import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 import logoSapphir from '@/images/logos/Sapphir.svg'
-import logoNanofab from '@/images/logos/Nanofab.svg'
+import logoNanoFab from '@/images/logos/NanoFab.svg'
 import logoGopuff from '@/images/logos/Gopuff.svg'
 import logoComcast from '@/images/logos/Comcast.svg'
 
