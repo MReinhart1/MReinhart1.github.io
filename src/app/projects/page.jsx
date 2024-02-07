@@ -8,42 +8,46 @@ import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 // import logoPlanetaria from '@/images/logos/planetaria.svg'
 
+import logoSapphir from '@/images/logos/Sapphir.svg'
+import logoNanofab from '@/images/logos/Nanofab.svg'
+import logoGopuff from '@/images/logos/Gopuff.svg'
+import logoComcast from '@/images/logos/Comcast.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Comcast',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: '/articles/crafting-a-design-system-for-a-multiplanetary-future', label: 'planetaria.tech' },
-    // logo: logoPlanetaria,
+      'Working at comcast',
+    link: { href: '/articles/Comcast', label: 'Comcast' },
+    logo: logoComcast,
   },
   {
     name: 'Animaginary',
     description:
       'High performance web animation library, hand-written in optimized WASM.',
     link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: logoComcast,
   },
   {
     name: 'HelioStream',
     description:
       'Real-time video streaming library, optimized for interstellar transmission.',
     link: { href: '#', label: 'github.com' },
-    // logo: logoHelioStream,
+    logo: logoComcast,
   },
   {
     name: 'cosmOS',
     description:
       'The operating system that powers our Planetaria space shuttles.',
     link: { href: '#', label: 'github.com' },
-    // logo: logoCosmos,
+    logo: logoComcast,
   },
   {
     name: 'OpenShuttle',
     description:
       'The schematics for the first rocket I designed that successfully made it to orbit.',
     link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+    logo: logoComcast,
   },
 ]
 

@@ -7,9 +7,7 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
 import logoSapphir from '@/images/logos/Sapphir.svg'
 import logoNanofab from '@/images/logos/Nanofab.svg'
@@ -105,6 +103,20 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
+function SocialLinkEmail({ className, href, children, icon: Icon }) {
+  return (
+    <li className={clsx(className, 'flex')}>
+      <Link
+        href={href}
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+      >
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <span className="ml-4">{children}</span>
+      </Link>
+    </li>
+  )
+}
+
 function Newsletter() {
   return (
     <form
@@ -118,16 +130,14 @@ function Newsletter() {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         I check my email regularly
       </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          value="michaelreinhart112@gmail.com"
-          placeholder="michaelreinhart112@gmail.com"
-          aria-label="michaelreinhart112@gmail.com"
-          required
-          disabled
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
-        />
+      <div className="mt-0 flex">
+      <SocialLinkEmail
+          href="mailto:michaelreinhart112@gmail.com"
+          icon={MailIcon}
+          className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+        >
+        michaelreinhart112@gmail.com
+      </SocialLinkEmail>
       </div>
     </form>
   )
@@ -254,7 +264,14 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+  let articles = await getAllArticles()
+
+  articles = articles.filter(function(value){
+    if (value.title == "Comcast" || value.title == "Gopuff" || value.title == "Sapphir" || value.title == "NanoFabrication"  ){
+      return true
+    }
+    return false
+  })
 
   return (
     <>
