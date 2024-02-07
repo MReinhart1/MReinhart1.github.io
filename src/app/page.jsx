@@ -11,10 +11,10 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoSapphir from '@/images/logos/Sapphir.svg'
+import logoNanofab from '@/images/logos/Nanofab.svg'
+import logoGopuff from '@/images/logos/Gopuff.svg'
+import logoComcast from '@/images/logos/Comcast.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -173,35 +173,35 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Comcast',
+      title: 'Software Engineer - III',
+      logo: logoComcast,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Gopuff',
+      title: 'Software Engineer',
+      logo: logoGopuff,
+      start: '2021',
+      end: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Sapphir',
+      title: 'Full Stack Web Developer',
+      logo: logoSapphir,
+      start: '2020',
+      end: '2020',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Kingston Nanofabrication',
+      title: 'Full Stack Web Developer',
+      logo: logoNanofab,
+      start: '2019',
+      end: '2020',
     },
   ]
 
