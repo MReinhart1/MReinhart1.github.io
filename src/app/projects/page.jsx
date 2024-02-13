@@ -15,37 +15,38 @@ import logoComcast from '@/images/logos/Comcast.svg'
 
 const projects = [
   {
-    name: 'Comcast',
+    name: 'Multi-national Insurance Platform',
     description:
-      'Working at comcast',
-    link: { href: '/articles/Comcast', label: 'Comcast' },
+      'Insurance',
+    link: { href: 'https://github.com/MReinhart1/global-connect-backend', label: 'github.com' },
     logo: logoComcast,
   },
   {
-    name: 'Animaginary',
+    name: 'Facial Recognition for Chrome Passwords',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Chromium project',
+    link: { href: 'https://github.com/Mack6870/Facial-Recognition-Chrome-Extension/tree/main/FacialRecognitionWebcamExtension', label: 'github.com' },
     logo: logoComcast,
   },
   {
-    name: 'HelioStream',
+    name: 'Real time video to HTML',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'Blocks to Paragraphs',
+    // link: { href: '/articles/Comcast', label: 'Comcast' },
+    link: { href: 'https://github.com/Mack6870/Kinect-Website-Builder', label: 'Comcast' },
     logo: logoComcast,
   },
   {
-    name: 'cosmOS',
+    name: 'AI Phone Bot',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'Voya bot to make banking transfers',
+    link: { href: 'https://github.com/MReinhart1/voyaUICallTranscriber', label: 'github.com' },
     logo: logoComcast,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Tinder but for Betting',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
+      'https://github.com/MReinhart1/sportsvoteMVP',
     link: { href: '#', label: 'github.com' },
     logo: logoComcast,
   },
