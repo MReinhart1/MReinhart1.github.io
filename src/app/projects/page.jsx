@@ -15,38 +15,38 @@ import logoComcast from '@/images/logos/Comcast.svg'
 
 const projects = [
   {
-    name: 'Multi-national Insurance Platform',
+    name: 'Insurance Platform',
     description:
-      'Insurance',
-    link: { href: '/articles/Global-Connect', label: 'github.com' },
+      'Multi-national insurance platform to connect insurance companies across the world. Accepted and validated insurance policies, allowed for underwrites to bid on them',
+    link: { href: '/articles/Global-Connect', label: 'Global Connect' },
     logo: logoComcast,
   },
   {
     name: 'Facial Recognition for Chrome Passwords',
     description:
-      'Chromium project',
-    link: { href: '/articles/Facial-Recognition', label: 'github.com' },
+      'Chromium (Google Chrome) project to add an extention that auto-fills passwords based on facial recognition',
+    link: { href: '/articles/Facial-Recognition', label: 'Facial Recognition' },
     logo: logoComcast,
   },
   {
     name: 'Real time video to HTML',
     description:
-      'Blocks to Paragraphs',
-    link: { href: '/articles/Video-to-HTML', label: 'Comcast' },
+      'Built out an html page with images, headers and paragraphs from blocks placed on the ground. A Xbox Connect camera was used to get video input',
+    link: { href: '/articles/Video-to-HTML', label: 'HTML Builder' },
     logo: logoComcast,
   },
   {
     name: 'AI Phone Bot',
     description:
-      'Voya bot to make banking transfers',
-    link: { href: '/articles/AI-Phone-Bot', label: 'github.com' },
+      'Integrated with AWS Call Center to accept phone calls. Users could check their balance and make withdrawls over the phone ',
+    link: { href: '/articles/AI-Phone-Bot', label: 'AI Phone Bot' },
     logo: logoComcast,
   },
   {
     name: 'SportsVote',
     description:
-      'SportsVote',
-    link: { href: '/articles/SportsVote', label: 'github.com' },
+      'SportsVote was a IOS application for users to make fast paced real time bets on current NHL Hockey games',
+    link: { href: '/articles/SportsVote', label: 'Sportsvote' },
     logo: logoComcast,
   },
 ]

@@ -1,12 +1,12 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
-import designSystem from './planetaria-design-system.png'
+import comcastBuilding from './comcast-building.png'
 
 export const article = {
   author: 'Michael Reinhart',
   date: '2022-09-01',
   title: 'Comcast',
   description:
-    'Comcast Description',
+    'Worked on the Comcast Scheduler team to schedule and organize recordings for both Cloud and DVR users',
 }
 
 export const metadata = {
@@ -16,75 +16,25 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
 
-<Image src={designSystem} alt="" />
+## Introduction
+I started working at Comcast in September of 2022. It was a hybrid position with 3-4 days in the office a week. The building was beautiful, massive gym, great food and common areas with couches and free drinks. During my time there I set up my desk running 4 external monitors using a [DisplayLink Doc](https://www.amazon.com/Plugable-Charging-Thunderbolt-Compatible-Specific/dp/B08DDH5CPW/ref=sr_1_3_pp?crid=K37DLLGICIC9&dib=eyJ2IjoiMSJ9.CdXRc4oy2DwJIRt5oQ7cXZKDRy8aGD2t5yIuXEgbhOF-s7fXJa_B_gxNrEMC3UnG8hKIh0ygHLM3F5JxkKag4eOLgQk_QgOtYbot1Z32FIl0PAdcDNh-5Ah96LvhDUbgllMU0MLY47wBkbmKGtj_vmLH_x2wKvJ1KjZJtcT6gB5O2C1oo0XgivdVMY-Fi-Svpt5C2QkqvOcXm2TaoFGUBX8K1qJOXQHQzvNLVPn_sSw.VvJcm_3ehCqBuYLVy6Y_MUGGf-7_Q3LBCHsnkXCzQBE&dib_tag=se&keywords=display+link+docking+station&qid=1708722528&sprefix=display+link+docking+stating%2Caps%2C326&sr=8-3 "title") with the companion software. I worked on a team of 7 as the only engineer with kubernetes experience. My main focus area was to help break up our monolithic services and transform them into microservice that can be run on any kubernetes environment.
 
-I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
 
-## Sermone fata
+<Image src={comcastBuilding} alt="" />
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
 
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
+## Kubernetes
 
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
-```
+I became extreamily knowledgable with kubernetes during my time at comcast and was the SME for my organization. I built out clusters on AWS EKS as well as contributed to comcast's on-prem cloud kubernetes offering called the Hybrid Infrastructure Platform. I built out many clusters running in dev and prod environments across the United States and well as produciton clusters in Europe. These clusters used all the latest technologies such as ArgoCD, istio for ingress controll, traffic routing and some really nice observability. Autoscaling was done with [keda](https://keda.sh/) and [Karpenter](https://karpenter.sh/), if you dont know what either of these are and want to autoscale in kubernetes check them out! Keda allows for scaling pods with a bunch of different metrics like prometheus, crons, even the size of an AWS queue. Karpenter is for scaling the nodes of the cluster in a unique node groupless way. You can select any AWS EC2 machine you want just by adding a node selector to the deployment, super easy!!! 
 
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
 
-## Lethaei Pindumve me quae dinumerat Pavor
+## CI/CD
 
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
+My team relied on [concourse](https://concourse-ci.org/) for pipleines, however the entire company migrated over to github enterprise cloud which allowed us to use github actions. I found actions to be far better than concourse, actions could be triggered much more easily as it was integrated with our git and could take input. I set up my organizations github cloud account and build out new pipelines with acions that were fully CI/CD. Part of this effort involved building out a release management pattern that worked for the services at comcast. I created a couple different patterns, one that was fully CI/CD and one that was not for services that required more control. I containorized all the services that ran in our clusters and integrated all the building testing and deploying of services into that pattern. 
 
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
 
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
+## Loadtesting
 
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
-```
+Comcast offered lab week once a quarter. A lab week is one week to go off and build anything you like. During my lab week I built out load tests using [K6](https://k6.io/). We were originally using [JMeter](https://jmeter.apache.org/) but it was impossible to get any consistent results as JMeter was not able to produce definitive requests per second traffic. After showing my Lab Week project to the team it was formalized and taken into our backlog. I built our the first baseline loadtest for one of the more basic services and handled the platform for distributed load tests using k6 and kubernetes. I oversaw other developers as they built out the rest of the load tests. 
 
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.

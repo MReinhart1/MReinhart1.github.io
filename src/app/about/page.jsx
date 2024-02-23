@@ -73,12 +73,13 @@ export default function About() {
             </p>
             <p>
               Computer Science as a degree was an easy choice for me, I learned all about object oriented programming, networking,
-              discrete math and sorted an array far too many times. I also built out some great pet projects which you should check out
-              on the projects page!
+              discrete math and sorted an array far too many times. 
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
+
+        {/* I also built out some great pet projects which you should check out on the projects page! */}
           <ul role="list">
             <SocialLink href="https://github.com/MReinhart1" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
