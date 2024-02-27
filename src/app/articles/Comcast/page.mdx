@@ -1,5 +1,8 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import comcastBuilding from './comcast-building.png'
+import k6 from './k6.png'
+import GithubActions from './Github-Actions.png'
+import Kubernetes from './Kubernetes.png'
 
 export const article = {
   author: 'Michael Reinhart',
@@ -25,16 +28,16 @@ I started working at Comcast in September of 2022. It was a hybrid position with
 
 
 ## Kubernetes
-
+<Image src={Kubernetes} alt="" />
 I became extreamily knowledgable with kubernetes during my time at comcast and was the SME for my organization. I built out clusters on AWS EKS as well as contributed to comcast's on-prem cloud kubernetes offering called the Hybrid Infrastructure Platform. I built out many clusters running in dev and prod environments across the United States and well as produciton clusters in Europe. These clusters used all the latest technologies such as ArgoCD, istio for ingress controll, traffic routing and some really nice observability. Autoscaling was done with [keda](https://keda.sh/) and [Karpenter](https://karpenter.sh/), if you dont know what either of these are and want to autoscale in kubernetes check them out! Keda allows for scaling pods with a bunch of different metrics like prometheus, crons, even the size of an AWS queue. Karpenter is for scaling the nodes of the cluster in a unique node groupless way. You can select any AWS EC2 machine you want just by adding a node selector to the deployment, super easy!!! 
 
 
 ## CI/CD
-
+<Image src={GithubActions} alt="" />
 My team relied on [concourse](https://concourse-ci.org/) for pipleines, however the entire company migrated over to github enterprise cloud which allowed us to use github actions. I found actions to be far better than concourse, actions could be triggered much more easily as it was integrated with our git and could take input. I set up my organizations github cloud account and build out new pipelines with acions that were fully CI/CD. Part of this effort involved building out a release management pattern that worked for the services at comcast. I created a couple different patterns, one that was fully CI/CD and one that was not for services that required more control. I containorized all the services that ran in our clusters and integrated all the building testing and deploying of services into that pattern. 
 
 
 ## Loadtesting
-
+<Image src={k6} alt="" />
 Comcast offered lab week once a quarter. A lab week is one week to go off and build anything you like. During my lab week I built out load tests using [K6](https://k6.io/). We were originally using [JMeter](https://jmeter.apache.org/) but it was impossible to get any consistent results as JMeter was not able to produce definitive requests per second traffic. After showing my Lab Week project to the team it was formalized and taken into our backlog. I built our the first baseline loadtest for one of the more basic services and handled the platform for distributed load tests using k6 and kubernetes. I oversaw other developers as they built out the rest of the load tests. 
 
