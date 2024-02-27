@@ -24,26 +24,28 @@ export default (props) => <ArticleLayout article={article} {...props} />
 
 # Sapphir
 
-
-<Image src={Home} alt="" />
-<Image src={Calculator} alt="" />
-<Image src={Bank} alt="" />
-<Image src={Support} alt="" />
-
 ## Introduction
-
-
-
+<Image src={Home} alt="" />
 Sapphir is an online micro loan company that specializes in small loans that can be fufilled in the same day. A user could select a loan ammount, and fill out an application.
 The company would receive the application, review the users documents, check that they were qualified using the integrated 3rd party API to auto-approve the application, and sign the 
-auto-templated contract. Payments history was available to be updated on all payments and exported when needed. The site was integrated with an online AI chat bot as well.
+powered by docuSign. Payments history was available to be updated on all payments and exported when needed. 
 
-The website was broken up into:
-- Loan information 
-- User portal 
-- Business portal for employees
+### Components
+
+<Image src={Calculator} alt="" />
+A loan calculator was built out so that users could configure what type of loan to apply for based on the amount and payment schedule.
+
+
+<Image src={Bank} alt="" />
+A user would fill out a form and connect their bank to the site in order for [flinks](https://flinks.com/), a financial data API, to autoapprove individuals for loans.
+
+
+<Image src={Support} alt="" />
+The site was integrated with an online AI chat bot.
+
 
 ## Technologies
 
 The website was built out using javascript and express available in multiple languages. MongoDB was used for the database and nodemailer was used for emails.
 PassportJS was used for login with various methods including facebook. AWS was used for cloud hosting and document's were saved in s3.
+
