@@ -1,4 +1,9 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Home from './Home.png'
+import Calculator from './Calculator.png'
+import Bank from './Bank.png'
+import Support from './Support.png'
+
 
 export const article = {
   author: 'Michael Reinhart',
@@ -19,7 +24,15 @@ export default (props) => <ArticleLayout article={article} {...props} />
 
 # Sapphir
 
+
+<Image src={Home} alt="" />
+<Image src={Calculator} alt="" />
+<Image src={Bank} alt="" />
+<Image src={Support} alt="" />
+
 ## Introduction
+
+
 
 Sapphir is an online micro loan company that specializes in small loans that can be fufilled in the same day. A user could select a loan ammount, and fill out an application.
 The company would receive the application, review the users documents, check that they were qualified using the integrated 3rd party API to auto-approve the application, and sign the 
@@ -33,3 +46,4 @@ The website was broken up into:
 ## Technologies
 
 The website was built out using javascript and express available in multiple languages. MongoDB was used for the database and nodemailer was used for emails.
+PassportJS was used for login with various methods including facebook. AWS was used for cloud hosting and document's were saved in s3.
