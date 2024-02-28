@@ -15,21 +15,15 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-
-
-
-# Kingston NanoFabrication
-
 ## Introduction
+Kingston NanoFabrication was a local business in Kingston Ontario that provided nanofabrication machines to scientists and engineers. They 
+operated the payments and usage of the machines based on the honor system and manually wrote out the timestamps on paper. I was tasked with 
+building a system to automate this process within a team of 4.
 
 ## Technologies
+My team and I built out a website in python using flask for the UI, each machine was wired up to raspberry pi's that monitored usage using RFID
+badge scanners. The raspberry pi's all communicated over the local network with the master node that the frontend UI integrated with. The lab managers
+could manage users, track usage and bill customers. We included graphing technology for analytics to see what users used what machines and what machines
+provided the most profit among other things.
 
-## Breakdown
-
-### Links
-
-- <a href=""> Source Code </a>
-
-
-
-
+Check out the video going over our system [here](https://drive.google.com/file/d/1z3RBxgzTV8DtogWlfSAwMVheuy7vcXOZ/view?usp=sharing)
