@@ -1,4 +1,5 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Gopuff from './Gopuff.png'
 
 export const article = {
   author: 'Michael Reinhart',
@@ -15,15 +16,33 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-
-
-# Gopuff
+<Image src={Gopuff} alt="" />
 
 ## Introduction
-
-## Technologies
+Gopuff delivers thousands of everyday items, at your door in 30 minutes. Get everyday value in your pocket. Instantly. Gopuff
+was a new start up working with all the latest technologies to build out a fully microservices environment. I worked largly
+with kubernetes that deployed all services, pipleines to deploy them and terraform to create the infrastructure. This was my 
+first full time position at a corporation and was the most intense, and efficient learning curve of my life. 
 
 ## Breakdown
+
+#### Kubernetes
+I was introduced to the entire ecosystem of kubernetes. The best resource to learn more about what is out there is through 
+[CNCF Projects](https://www.cncf.io/projects/). After getting the basics down with CRD's, kubectl and the general flow with helm. I started
+to pick projects that interested me and implement ones that I thought would help. ArgoCD was my favoriate, but also really enjoyed 
+working with OPA and prometheus. We ended up building a prod parallel environment were I learned about how to spin up services from terraform
+up to proper service mesh routing.
+
+#### CI/CD
+Gopuff relied heavily on github actions. I learned how to run pipelines, architect repetable patterns and how to deploy services in production.
+This is where I really learned about the importance of good architecture and how to set up services to catch bugs before prod.
+
+#### Payments database migration
+One of my hardest challenges was migrating our payments database from a shared relational DB to its own microserviced one. The solution required
+no code changes which made duel writing impossible. I ended up running a pipeline to first to a bulk migration, and then smaller ones to 
+migrate the new rows based on the timestamps of what data had not been migrated. We ended up doing this with only 2 minutes of downtime.
+
+
 
 ### Links
 
