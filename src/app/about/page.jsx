@@ -81,7 +81,7 @@ export default function About() {
               table in the backyard and would send an alert when the water got too high. Next came the frontend frameworks such as 
               reactJS which I learned to make much more user friendly applications, such as a multi-national insurance platform for 
               underwriters across the world to upload policies that would be accepted by local insurance companies in the respective 
-              country. I continued my journey up the stack to orchestration and cloud computing where I became fascinated with 
+              country. I continued my journey up the stack to infrastructure, orchestration and cloud computing where I became fascinated with 
               Kubernetes. I ended up getting the Kubernetes Administrator as well as some AWS certifications. I now spend much of my 
               time working with Kubernetes and release management services with a personal favorite being GitHub actions.
             </p>
