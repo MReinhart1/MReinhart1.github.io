@@ -60,7 +60,7 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I was born in Oakville Ontario, a suburb of Toronto, and moved to Connecticut when I was about two. 
+              I was born in Oakville, Ontario, close to Toronto, and moved to Connecticut as a baby.
               Growing up I was obsessed with reading Greek and Norse Mythology, as well as climbing trees. I spent much of my time 
               running around the forest behind my home after school, building a tree fort with my father as well as bows and arrows 
               out of wooden dowels from Home Depot (until I almost lost my eye). Currently I spend much of my time flying Cessna 172’s 
