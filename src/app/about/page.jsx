@@ -60,31 +60,30 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I was born in Oakville Ontario, a suburb of Toronto, and moved to Connecticut when I was about two. 
+              I was born in Oakville, Ontario, close to Toronto, and moved to Connecticut as a baby.
               Growing up I was obsessed with reading Greek and Norse Mythology, as well as climbing trees. I spent much of my time 
-              running around the forest behind my home after school, building a tree fort with my father as well as bows and arrows 
-              out of wooden dowels from Home Depot (until I almost lost my eye). Currently I spend much of my time flying Cessna 172’s 
-              and learning more about full stack development.
+              running around the forest behind my home after school, building tree forts with my father as well as constructing bows and arrows 
+              out of wooden dowels. Currently I spend much of my time flying Cessna 172’s 
+              and enhancing my knowledge with full stack development.
             </p>
             <p>
               As I grew older I started to play with computers. I started out with simple things like programming the steps for a 
               dot to escape a maze using functions: moveLeft(), moveRight(), moveForward(). Then my parents bought me a raspberry pi 
-              for Christmas. It was a Model 3 where I learned about basic bash scripting and python; as well as basic networking within 
-              a Local Area Network. Computer Science as a degree was an easy choice for me, I learned all about object oriented 
-              programming, networking, discrete math and sorted an array far too many times. 
+              for Christmas. It was a Model 3 where I learned about basic bash scripting and python as well as basic networking within 
+              a Local Area Network. Computer Science as a degree was an easy choice for me. I learned object oriented 
+              programming, networking, discrete math and how to sort an array.
             </p>
-            </div>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              As my career grew I started to play with html and css, building fun UI’s with bootstrap. I then discovered expressJS and 
+              As my career grew I started to play with html and css, building UI’s with bootstrap. I then discovered expressJS and 
               MongoDB. I bought MongoDB: The Definitive Guide: Powerful and Scalable Data Storage and started to create applications with
-              databases. Unfortunately, my basement flooded once again in 2020 and I vowed to put an end to it. I bought a ultrasonic 
-              distance sensor and wired it up to a raspberry pi. The Pi ran a postgreSQL database to monitor the height of the water
+              databases. Unfortunately, my basement flooded once again in 2020 and I vowed to solve the problem. I bought a ultrasonic 
+              distance sensor and wired it up to a Raspberry Pi. The Pi ran a postgreSQL database to monitor the height of the water
               table in the backyard and would send an alert when the water rose too high. Next came the frontend frameworks such as 
               reactJS which I learned to make much more user friendly applications, such as a multi-national insurance platform for 
               underwriters across the world to upload policies that would be accepted by local insurance companies in the respective 
               country. I continued my journey up the stack to infrastructure, orchestration and cloud computing where I became fascinated with 
-              Kubernetes. I ended up getting the Kubernetes Administrator as well as some AWS certifications. I now spend much of my 
+              Kubernetes. I ultimately obtained the Kubernetes Administrator as well as some AWS certifications. I now spend much of my 
               time working with Kubernetes and release management services with a personal favorite being GitHub actions.
             </p>
             </div>
@@ -111,5 +110,4 @@ export default function About() {
         </div>
       </div>
     </Container>
-  )
-}
+
